@@ -30,6 +30,7 @@
     "graphql": "^15.5.1",
     "https-browserify": "~0.0.0",
     "lodash": "^4.17.21",
+    "moment": "^2.29.1",
     "patch-package": "^6.4.7",
     "path-browserify": "^0.0.0",
     "punycode": "^1.4.1",
@@ -44,6 +45,7 @@
     "react-native-reanimated": "^1.13.2",
     "react-native-safe-area-context": "^3.3.0",
     "react-native-screens": "^3.5.0",
+    "react-native-svg": "^12.1.1",
     "react-native-tcp": "^3.3.2",
     "react-native-udp": "^2.7.0",
     "readable-stream": "^1.0.33",
@@ -68,6 +70,7 @@
     "eslint": "^7.32.0",
     "jest": "^27.0.6",
     "metro-react-native-babel-preset": "^0.66.2",
+    "react-native-svg-transformer": "^0.14.3",
     "react-test-renderer": "17.0.1"
   },
   "jest": {
