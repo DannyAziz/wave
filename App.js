@@ -7,18 +7,13 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  View,
-  ScrollView,
-  Text,
-  StatusBar,
-  useColorScheme,
-  Button,
-} from 'react-native';
+import {useColorScheme} from 'react-native';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
+
+import SearchContextProvider, {SearchContext} from '@lib/utils/context';
 
 import {ThemeProvider} from 'styled-components';
 import {lightTheme, darkTheme} from '@lib/utils/theme';
@@ -27,7 +22,11 @@ import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {ApolloClient, InMemoryCache, ApolloProvider} from '@apollo/client';
 
 import Search from '@lib/views/search';
+import Filter from '@lib/views/filter';
+import Asset from '@lib/views/asset';
 
+import {LogBox} from 'react-native';
+LogBox.ignoreLogs(['Reanimated 2']);
 const headers = {
   // authority: 'api.opensea.io',
   // pragma: 'no-cache',
@@ -54,26 +53,50 @@ const client = new ApolloClient({
   uri: 'https://api.opensea.io/graphql/',
   cache: new InMemoryCache(),
   headers,
+  connectToDevTools: true,
 });
 
 const NativeStack = createNativeStackNavigator();
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
+  // const isDarkMode = useColorScheme() === 'dark';
+  const isDarkMode = true;
   return (
-    <ApolloProvider client={client}>
-      <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
-        <NavigationContainer>
-          <NativeStack.Navigator>
-            <NativeStack.Screen
-              name="Search"
-              component={Search}
-              options={{headerShown: false}}
-            />
-          </NativeStack.Navigator>
-        </NavigationContainer>
-      </ThemeProvider>
-    </ApolloProvider>
+    <SafeAreaProvider>
+      <ApolloProvider client={client}>
+        <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+          <SearchContextProvider>
+            <NavigationContainer
+              theme={{
+                colors: {
+                  background: isDarkMode ? '#222222' : '#FFFFFF',
+                },
+              }}>
+              <NativeStack.Navigator>
+                <NativeStack.Screen
+                  name="Search"
+                  component={Search}
+                  options={{headerShown: false}}
+                />
+                <NativeStack.Screen
+                  name="Filter"
+                  component={Filter}
+                  options={{
+                    presentation: 'modal',
+                    headerShown: false,
+                  }}
+                />
+                <NativeStack.Screen
+                  name="Asset"
+                  component={Asset}
+                  options={{headerShown: false}}
+                />
+              </NativeStack.Navigator>
+            </NavigationContainer>
+          </SearchContextProvider>
+        </ThemeProvider>
+      </ApolloProvider>
+    </SafeAreaProvider>
   );
 };
 
