@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import {useColorScheme} from 'react-native';
+import {StatusBar} from 'react-native';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
@@ -60,9 +60,10 @@ const NativeStack = createNativeStackNavigator();
 
 const App = () => {
   // const isDarkMode = useColorScheme() === 'dark';
-  const isDarkMode = true;
+  const isDarkMode = false;
   return (
     <SafeAreaProvider>
+      <StatusBar barStyle={`${isDarkMode ? 'light' : 'dark'}-content`} />
       <ApolloProvider client={client}>
         <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
           <SearchContextProvider>
