@@ -83,6 +83,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "Wave"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
