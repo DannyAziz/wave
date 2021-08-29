@@ -12,6 +12,7 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		21CECF06C7514DE5A2B28CD6 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = C0024C3C2AA849838D0C24CE /* splash.png */; };
 		2BADA6315EDE4BCD870FB6E7 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AA83AA60AB24E3F828D5D0E /* Poppins-BoldItalic.ttf */; };
 		2E62147B34B9483CBB6F6C9D /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE9ECB0A284A424B8309EB67 /* Poppins-BlackItalic.ttf */; };
 		486E009AD63844B687821335 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B83F14A6E9BD4202BCB304E9 /* Poppins-Bold.ttf */; };
@@ -50,7 +51,7 @@
 		00E356F21AD99517003FC87E /* waveappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = waveappTests.m; sourceTree = "<group>"; };
 		05322AFB5C0B491AB84090C6 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ThinItalic.ttf"; path = "../assets/fonts/Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
 		0AA83AA60AB24E3F828D5D0E /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BoldItalic.ttf"; path = "../assets/fonts/Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* waveapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = waveapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Wave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = waveapp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = waveapp/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = waveapp/Images.xcassets; sourceTree = "<group>"; };
@@ -75,6 +76,7 @@
 		97ED7615BB6245CE9989520B /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-MediumItalic.ttf"; path = "../assets/fonts/Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
 		AA51339BED7E4A45B98CA6BD /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		B83F14A6E9BD4202BCB304E9 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		C0024C3C2AA849838D0C24CE /* splash.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = splash.png; path = ../assets/images/splash.png; sourceTree = "<group>"; };
 		C7F04B461850EDBCA69E593E /* Pods-waveapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waveapp.release.xcconfig"; path = "Target Support Files/Pods-waveapp/Pods-waveapp.release.xcconfig"; sourceTree = "<group>"; };
 		CE9ECB0A284A424B8309EB67 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BlackItalic.ttf"; path = "../assets/fonts/Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
 		D2F9D1B0DF8C4375A0AA3F8F /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-LightItalic.ttf"; path = "../assets/fonts/Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -168,7 +170,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* waveapp.app */,
+				13B07F961A680F5B00A75B9A /* Wave.app */,
 				00E356EE1AD99517003FC87E /* waveappTests.xctest */,
 			);
 			name = Products;
@@ -206,6 +208,7 @@
 				15CD277550B64D6A88F82A3C /* Poppins-SemiBoldItalic.ttf */,
 				93CC0023E81349448BAEA5E5 /* Poppins-Thin.ttf */,
 				05322AFB5C0B491AB84090C6 /* Poppins-ThinItalic.ttf */,
+				C0024C3C2AA849838D0C24CE /* splash.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -253,7 +256,7 @@
 			);
 			name = waveapp;
 			productName = waveapp;
-			productReference = 13B07F961A680F5B00A75B9A /* waveapp.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Wave.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -324,6 +327,7 @@
 				B78DD130193D460E98DF71B6 /* Poppins-SemiBoldItalic.ttf in Resources */,
 				93B59AA340274B5BAD653D22 /* Poppins-Thin.ttf in Resources */,
 				D44DB41B80CD40588E1541D9 /* Poppins-ThinItalic.ttf in Resources */,
+				21CECF06C7514DE5A2B28CD6 /* splash.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,13 +575,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = waveapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dannyaziz.wave;
+				PRODUCT_NAME = Wave;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -597,13 +602,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = waveapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dannyaziz.wave;
+				PRODUCT_NAME = Wave;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
