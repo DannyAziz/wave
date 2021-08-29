@@ -254,6 +254,9 @@ PODS:
     - React-jsi (= 0.64.2)
     - React-perflogger (= 0.64.2)
   - React-jsinspector (0.64.2)
+  - react-native-photo-manipulator (1.2.4):
+    - React
+    - WCPhotoManipulator (~> 2.0.4)
   - react-native-randombytes (3.6.1):
     - React-Core
   - react-native-safe-area-context (3.3.0):
@@ -328,6 +331,8 @@ PODS:
     - React-Core
   - RNGestureHandler (1.10.3):
     - React-Core
+  - RNImageColors (1.4.0):
+    - React-Core
   - RNOS (1.2.6):
     - React
   - RNReactNativeHapticFeedback (1.11.0):
@@ -366,6 +371,7 @@ PODS:
     - React-RCTImage
   - RNSVG (12.1.1):
     - React
+  - WCPhotoManipulator (2.0.4)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -408,6 +414,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
+  - react-native-photo-manipulator (from `../node_modules/react-native-photo-manipulator`)
   - react-native-randombytes (from `../node_modules/react-native-randombytes`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
@@ -425,6 +432,7 @@ DEPENDENCIES:
   - "RNCMaskedView (from `../node_modules/@react-native-masked-view/masked-view`)"
   - "RNCPicker (from `../node_modules/@react-native-picker/picker`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNImageColors (from `../node_modules/react-native-image-colors`)
   - RNOS (from `../node_modules/react-native-os`)
   - RNReactNativeHapticFeedback (from `../node_modules/react-native-haptic-feedback`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
@@ -445,6 +453,7 @@ SPEC REPOS:
     - FlipperKit
     - libevent
     - OpenSSL-Universal
+    - WCPhotoManipulator
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -480,6 +489,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
+  react-native-photo-manipulator:
+    :path: "../node_modules/react-native-photo-manipulator"
   react-native-randombytes:
     :path: "../node_modules/react-native-randombytes"
   react-native-safe-area-context:
@@ -514,6 +525,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-picker/picker"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
+  RNImageColors:
+    :path: "../node_modules/react-native-image-colors"
   RNOS:
     :path: "../node_modules/react-native-os"
   RNReactNativeHapticFeedback:
@@ -555,6 +568,7 @@ SPEC CHECKSUMS:
   React-jsi: 67747b9722f6dab2ffe15b011bcf6b3f2c3f1427
   React-jsiexecutor: 80c46bd381fd06e418e0d4f53672dc1d1945c4c3
   React-jsinspector: cc614ec18a9ca96fd275100c16d74d62ee11f0ae
+  react-native-photo-manipulator: e44c14a28bf7c9b7657a0e0ac79327c1a4d8fe2c
   react-native-randombytes: 421f1c7d48c0af8dbcd471b0324393ebf8fe7846
   react-native-safe-area-context: 61c8c484a3a9e7d1fda19f7b1794b35bbfd2262a
   React-perflogger: 25373e382fed75ce768a443822f07098a15ab737
@@ -572,11 +586,13 @@ SPEC CHECKSUMS:
   RNCMaskedView: c298b644a10c0c142055b3ae24d83879ecb13ccd
   RNCPicker: c3a3d481bec16624ed84a3c2a64c92fdc5515960
   RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
+  RNImageColors: f6b4dc737d15bf01bf379369655467e03b361861
   RNOS: 6f2f9a70895bbbfbdad7196abd952e7b01d45027
   RNReactNativeHapticFeedback: 653a8c126a0f5e88ce15ffe280b3ff37e1fbb285
   RNReanimated: 9c13c86454bfd54dab7505c1a054470bfecd2563
   RNScreens: 01ab149b5dd5c27f5ff26741b1d2bdf2cee1af35
   RNSVG: 551acb6562324b1d52a4e0758f7ca0ec234e278f
+  WCPhotoManipulator: 45b7be19b75c9edf6d2b44f2f61dbc3673862a8f
   Yoga: 575c581c63e0d35c9a83f4b46d01d63abc1100ac
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
